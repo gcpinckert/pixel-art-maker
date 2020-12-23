@@ -141,6 +141,7 @@ h1 {
     width: 100px;
 }
 
+/* this grid creates the background colored "pixel" squares */
 .background-top-right {
     /* margin: 20px; */
     grid-area: 1/2/3/5;
@@ -360,6 +361,7 @@ p {
     margin: 10px;
 }
 
+/* This grid creates the background color "pixel" squares */
 .background-bottom-left {
     /* margin: 20px; */
     grid-area: 3/1/5/4;

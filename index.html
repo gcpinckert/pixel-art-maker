@@ -9,6 +9,9 @@
     <body>
         <div id="game-container">
             <div id="title-text">
+                <!--Title text in different colors layered to facilitate animation
+                    TODO: Figure out how to loop animation with "pause" if possible
+                    TODO: Loop animation until "Play" button pressed and game is revealed-->
                 <div class="turquoise">
                     <h1 class = "turquoise" id="pop1">Pixel<br>Art<br>Maker!</h1>
                 </div>
@@ -25,6 +28,7 @@
             <div class="play-button">
                 <button id="play" onclick="revealGame()">Play</button>
             </div>
+            <!-- The following divs represent background color squares-->
             <div class="background-top-right">
                 <div class="color1" id="a"></div>
                 <div class="color2" id="b"></div>
@@ -82,6 +86,7 @@
                     <p class="text-background">Press "Make Grid" button to <em class="p">start over</em>.</p>
                 </div>
             </div>
+            <!-- The following divs represent background color squares-->
             <div class="background-bottom-left">
                 <div class="color1" id="a2"></div>
                 <div class="color2" id="b2"></div>
