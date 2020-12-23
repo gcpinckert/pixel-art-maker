@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pixel Art Maker</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="game-container">
+            <div id="title-text">
+                <div class="turquoise">
+                    <h1 class = "turquoise" id="pop1">Pixel<br>Art<br>Maker!</h1>
+                </div>
+                <div class="pink">
+                    <h1 class="pink">Pixel<br>Art<br>Maker!</h1>
+                </div>
+                <div class="orange">
+                    <h1 class="orange">Pixel<br>Art<br>Maker!</h1>
+                </div>
+                <div class="ltgreen">
+                    <h1 class="ltgreen">Pixel<br>Art<br>Maker!</h1>
+                </div>
+            </div>
+            <div class="play-button">
+                <button id="play" onclick="revealGame()">Play</button>
+            </div>
+            <div class="background-top-right">
+                <div class="color1" id="a"></div>
+                <div class="color2" id="b"></div>
+                <div class="color3" id="c"></div>
+                <div class="color3" id="d"></div>
+                <div class="color2" id="e"></div>
+                <div class="color1" id="f"></div>
+                <div class="color2" id="g"></div>
+                <div class="color1" id="h"></div>
+                <div class="color3" id="i"></div>
+                <div class="color2" id="j"></div>
+                <div class="color1" id="k"></div>
+                <div class="color2" id="l"></div>
+                <div class="color3" id="m"></div>
+                <div class="color1" id="n"></div>
+                <div class="color3" id="o"></div>
+                <div class="color1" id="p"></div>
+                <div class="color2" id="q"></div>
+                <div class="color3" id="r"></div>
+                <div class="color3" id="s"></div>
+                <div class="color1" id="t"></div>
+                <div class="color2" id="u"></div>
+                <div class="color2" id="v"></div>
+                <div class="color3" id="w"></div>
+                <div class="color1" id="x"></div>
+                <div class="color1" id="y"></div>
+                <div class="color2" id="z"></div>
+            </div>
+            <div class="optionsContainer hidden">
+                <div class="optionsCard">
+                    <h2><span class="number">1.</span>
+                        Choose <em>Grid</em> Size</h2>
+                    <form id="grid-size">
+                        <label for="height">Grid Height:</label>
+                        <input type="number" name="height" id="inputHeight" min="1" value="1">
+                        <br>
+                        <label for="width">Grid Width:</label>
+                        <input type="number" name="width" id="inputWidth" min="1" value="1">
+                    </form>
+                    <button onclick="makeGrid()">Make Grid</button>
+                </div>
+                <div class="optionsCard">
+                    <h2><span class = "number">2.</span>
+                        Pick a <em>Color</em></h2>
+                    <input type="color" id="colorPicker">
+                </div>
+            </div>
+            <div class="instructionsContainer hidden">
+                <h2 id="instructions-heading">Make Some <em>Art</em>!</h2>
+                <div class="instructions">
+                    <!-- <h3>Instructions:</h3> -->
+                    <p class="text-background"><em class="p">Click</em> a cell to fill with color.</p>
+                    <p class="text-background">Click and <em class="p">hold</em> to draw a line.</p>
+                    <p class="text-background"><em class="p">Double click</em> to erase.</p>
+                    <p class="text-background">Press "Make Grid" button to <em class="p">start over</em>.</p>
+                </div>
+            </div>
+            <div class="background-bottom-left">
+                <div class="color1" id="a2"></div>
+                <div class="color2" id="b2"></div>
+                <div class="color3" id="c2"></div>
+                <div class="color3" id="d2"></div>
+                <div class="color2" id="e2"></div>
+                <div class="color1" id="f2"></div>
+                <div class="color2" id="g2"></div>
+                <div class="color1" id="h2"></div>
+                <div class="color3" id="i2"></div>
+                <div class="color2" id="j2"></div>
+                <div class="color1" id="k2"></div>
+                <div class="color2" id="l2"></div>
+                <div class="color3" id="m2"></div>
+                <div class="color1" id="n2"></div>
+                <div class="color3" id="o2"></div>
+                <div class="color1" id="p2"></div>
+                <div class="color2" id="q2"></div>
+                <div class="color3" id="r2"></div>
+                <div class="color3" id="s2"></div>
+                <div class="color1" id="t2"></div>
+                <div class="color2" id="u2"></div>
+                <div class="color2" id="v2"></div>
+                <div class="color3" id="w2"></div>
+                <div class="color2" id="x2"></div>
+                <div class="color1" id="y2"></div>
+                <div class="color3" id="z2"></div>
+                <div class="color2" id="a3"></div>
+                <div class="color1" id="b3"></div>
+                <div class="color2" id="c3"></div>
+                <div class="color3" id="d3"></div>
+                <div class="color1" id="e3"></div>
+            </div>
+        </div>
+        <div class="grid-canvas">
+            <table></table>
+        </div>
+        <script src="designs.js"></script>
+    </body>
+</html>
