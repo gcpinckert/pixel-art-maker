@@ -1,21 +1,21 @@
 // Select color input as global variable
-let color = document.querySelector('#colorPicker');
+const color = document.querySelector('#colorPicker');
 // Set mousedown boolean as global variable
 let mouseHeld = false;
 
 
 function makeGrid() {
     // Select grid dimensions
-    let rows = Number(document.getElementById('inputHeight').value);
-    let columns = Number(document.getElementById('inputWidth').value);
+    const rows = Number(document.getElementById('inputHeight').value);
+    const columns = Number(document.getElementById('inputWidth').value);
     // Create grid
-    let grid = document.querySelector('table');
+    const grid = document.querySelector('table');
     grid.innerHTML = "";
     for(var r = 0; r < rows; r++) {
-        let newRow = document.createElement('tr');
+        const newRow = document.createElement('tr');
         grid.appendChild(newRow);
         for(var c = 0; c < columns; c++) {
-            let newCell = document.createElement('td');
+            const newCell = document.createElement('td');
             newRow.appendChild(newCell);
         }
     }
@@ -62,8 +62,8 @@ function erase(event) {
 
 // Reveal the game when the play button is clicked
 function revealGame() {
-    let hiddenElements = document.getElementsByClassName("hidden");
-    let len = hiddenElements.length;
+    const hiddenElements = document.getElementsByClassName('hidden');
+    const len = hiddenElements.length;
     for (i = 0; i < len; i++) {
         hiddenElements[i].style.visibility = 'visible';
     }
