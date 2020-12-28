@@ -9,28 +9,28 @@
     </head>
 
     <body>
-        <div id="game-container">
+        <div class="game-container">
 
-            <div id="title-text">
+            <div class="title-text">
                 <!--Title text in different colors layered to facilitate animation
                     TODO: figure out how to loop animation with "pause" if possible
                     TODO: loop animation until "Play" button pressed and game is revealed-->
-                <div class="turquoise">
-                    <h1 class="turquoise" id="pop1">Pixel<br>Art<br>Maker!</h1>
+                <div class="turquoise-title">
+                    <h1 class="turquoise-title">Pixel<br>Art<br>Maker!</h1>
                 </div>
-                <div class="pink">
-                    <h1 class="pink">Pixel<br>Art<br>Maker!</h1>
+                <div class="pink-title">
+                    <h1 class="pink-title">Pixel<br>Art<br>Maker!</h1>
                 </div>
-                <div class="orange">
-                    <h1 class="orange">Pixel<br>Art<br>Maker!</h1>
+                <div class="orange-title">
+                    <h1 class="orange-title">Pixel<br>Art<br>Maker!</h1>
                 </div>
-                <div class="ltgreen">
-                    <h1 class="ltgreen">Pixel<br>Art<br>Maker!</h1>
+                <div class="ltgreen-title">
+                    <h1 class="ltgreen-title">Pixel<br>Art<br>Maker!</h1>
                 </div>
             </div>
 
             <div class="play-button">
-                <button id="play" onclick="revealGame()">Play</button>
+                <button class="play-button" onclick="revealGame()">Play</button>
             </div>
 
             <!-- The following divs represent background color squares-->
@@ -85,12 +85,12 @@
             </div>
 
             <div class="instructionsContainer hidden">
-                <h2 id="instructions-heading">Make Some <em>Art</em>!</h2>
+                <h2>Make Some <em>Art</em>!</h2>
                 <div class="instructions">
-                    <p class="text-background"><em class="p">Click</em> a cell to fill with color.</p>
-                    <p class="text-background">Click and <em class="p">hold</em> to draw a line.</p>
-                    <p class="text-background"><em class="p">Double click</em> to erase.</p>
-                    <p class="text-background">Press "Make Grid" button to <em class="p">start over</em>.</p>
+                    <p class="text-background"><em class="turquoise-text">Click</em> a cell to fill with color.</p>
+                    <p class="text-background">Click and <em class="turquoise-text">hold</em> to draw a line.</p>
+                    <p class="text-background"><em class="turquoise-text">Double click</em> to erase.</p>
+                    <p class="text-background">Press "Make Grid" button to <em class="turquoise-text">start over</em>.</p>
                 </div>
             </div>
 
