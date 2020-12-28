@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <title>Pixel Art Maker</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <div id="game-container">
+
             <div id="title-text">
                 <!--Title text in different colors layered to facilitate animation
-                    TODO: Figure out how to loop animation with "pause" if possible
-                    TODO: Loop animation until "Play" button pressed and game is revealed-->
+                    TODO: figure out how to loop animation with "pause" if possible
+                    TODO: loop animation until "Play" button pressed and game is revealed-->
                 <div class="turquoise">
-                    <h1 class = "turquoise" id="pop1">Pixel<br>Art<br>Maker!</h1>
+                    <h1 class="turquoise" id="pop1">Pixel<br>Art<br>Maker!</h1>
                 </div>
                 <div class="pink">
                     <h1 class="pink">Pixel<br>Art<br>Maker!</h1>
@@ -25,9 +28,11 @@
                     <h1 class="ltgreen">Pixel<br>Art<br>Maker!</h1>
                 </div>
             </div>
+
             <div class="play-button">
                 <button id="play" onclick="revealGame()">Play</button>
             </div>
+
             <!-- The following divs represent background color squares-->
             <div class="background-top-right">
                 <div class="color1" id="a"></div>
@@ -57,10 +62,11 @@
                 <div class="color1" id="y"></div>
                 <div class="color2" id="z"></div>
             </div>
+
             <div class="optionsContainer hidden">
+
                 <div class="optionsCard">
-                    <h2><span class="number">1.</span>
-                        Choose <em>Grid</em> Size</h2>
+                    <h2><span class="number">1.</span> Choose <em>Grid</em> Size</h2>
                     <form id="grid-size">
                         <label for="height">Grid Height:</label>
                         <input type="number" name="height" id="inputHeight" min="1" value="1">
@@ -70,22 +76,24 @@
                     </form>
                     <button onclick="makeGrid()">Make Grid</button>
                 </div>
+
                 <div class="optionsCard">
-                    <h2><span class = "number">2.</span>
-                        Pick a <em>Color</em></h2>
+                    <h2><span class = "number">2.</span> Pick a <em>Color</em></h2>
                     <input type="color" id="colorPicker">
                 </div>
+
             </div>
+
             <div class="instructionsContainer hidden">
                 <h2 id="instructions-heading">Make Some <em>Art</em>!</h2>
                 <div class="instructions">
-                    <!-- <h3>Instructions:</h3> -->
                     <p class="text-background"><em class="p">Click</em> a cell to fill with color.</p>
                     <p class="text-background">Click and <em class="p">hold</em> to draw a line.</p>
                     <p class="text-background"><em class="p">Double click</em> to erase.</p>
                     <p class="text-background">Press "Make Grid" button to <em class="p">start over</em>.</p>
                 </div>
             </div>
+
             <!-- The following divs represent background color squares-->
             <div class="background-bottom-left">
                 <div class="color1" id="a2"></div>
@@ -120,10 +128,14 @@
                 <div class="color3" id="d3"></div>
                 <div class="color1" id="e3"></div>
             </div>
+
         </div>
+
         <div class="grid-canvas">
             <table></table>
         </div>
+
         <script src="designs.js"></script>
+
     </body>
 </html>
